@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-surface: #f7f9fc;
+  --color-surface-dim: #d8dadd;
+  --color-surface-bright: #f7f9fc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f2f4f7;
+  --color-surface-container: #eceef1;
+  --color-surface-container-high: #e6e8eb;
+  --color-surface-container-highest: #e0e3e6;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #43474d;
+  --color-inverse-surface: #2d3133;
+  --color-inverse-on-surface: #eff1f4;
+  --color-outline: #74777e;
+  --color-outline-variant: #c3c6ce;
+  --color-surface-tint: #47607e;
+  --color-primary: #001d36;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #17324d;
+  --color-on-primary-container: #819aba;
+  --color-inverse-primary: #afc9ea;
+  --color-secondary: #075fae;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #6daafe;
+  --color-on-secondary-container: #003e75;
+  --color-tertiary: #2e1500;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #4d2600;
+  --color-on-tertiary-container: #e37e13;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d1e4ff;
+  --color-primary-fixed-dim: #afc9ea;
+  --color-on-primary-fixed: #001d36;
+  --color-on-primary-fixed-variant: #2f4865;
+  --color-secondary-fixed: #d4e3ff;
+  --color-secondary-fixed-dim: #a5c8ff;
+  --color-on-secondary-fixed: #001c3a;
+  --color-on-secondary-fixed-variant: #004786;
+  --color-tertiary-fixed: #ffdcc3;
+  --color-tertiary-fixed-dim: #ffb77d;
+  --color-on-tertiary-fixed: #2f1500;
+  --color-on-tertiary-fixed-variant: #6e3900;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-on-surface);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+

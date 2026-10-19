@@ -1,0 +1,6 @@
+{
+  "name": "성모정형외과마취통증의학과",
+  "description": "대전 중구 목동 성모정형외과마취통증의학과의원 - 척추, 관절, 근골격계 및 신경통증 전문 진료 및 내원 정보 안내",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
